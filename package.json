@@ -1,0 +1,16 @@
+{
+  "name": "nginx-testing",
+  "version": "0.0.0",
+  "description": "Dev Only. Used to test docker containers and nginx configs.",
+  "main": "index.js",
+  "scripts": {
+    "docker:install": "./scripts/docker/install_docker.sh",
+    "docker:start": "service docker start",
+    "docker:status": "service docker status",
+    "docker:stop": "service docker stop",
+    "docker:uninstall": "./scripts/docker/remove_docker.sh"
+  },
+  "workspaces": [
+    "nginx-examples"
+  ]
+}
